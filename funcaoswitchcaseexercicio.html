@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu lanchonete</title>
+
+ </head>
+<body>
+    <h1>Lanchonete Lair</h1>
+    <h1>Menu Lanches</h1>
+    <div id = "lanche"></div>
+
+<p>Lanche: <span id="lanche"></span></p>
+<p>Ingredientes: <span id="ingred"></span></p>
+
+<script>
+
+let lanche = Number(prompt("Peça seu lanhe pelo numero> \n 1 para X-Burguer \n 2 para X-Salada \n 3 para X-Tudo "));
+let ingrediente;
+let nome; 
+
+switch (lanche) {
+    case 1:
+        ingrediente = "hamburguer, queijo e maionese"
+        nome = "X-burguer"
+        break;
+case 2:
+    ingrediente = "hamburguer, queijo, alface, tomate e maionese"
+    nome = "X-Salada"
+    break;
+    case 3:
+        ingrediente = "hamburguer, queijo, bacon, frango, alface e tomate"
+        nome = "X-Tudo"
+    default:
+    break;
+}
+
+
+document.getElementById("ingred").innerHTML = ingrediente;
+document.getElementById("lanche").innerHTML = nome;
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
